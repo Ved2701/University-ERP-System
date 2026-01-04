@@ -1,10 +1,10 @@
-🎓 University ERP System (Java + Swing)
+University ERP System (Java + Swing)
 
 A desktop-based University ERP application built using Java and Swing, designed to manage courses, sections, enrollments, grades, and users with role-based access control.
 The system models real university workflows for Students, Instructors, and Admins, with a strong emphasis on data integrity, access rules, and system robustness.
 
-✨ Key Features
-👤 Role-Based Access
+Key Features
+Role-Based Access
 
 The system supports three distinct user roles:
 
@@ -16,7 +16,7 @@ Admin: manage users, courses, sections, instructor assignments, and system-wide 
 
 Each action is validated against role permissions to prevent unauthorized access.
 
-🛠️ Core Functionalities
+Core Functionalities
 Common
 
 Secure login with role-specific dashboards
@@ -61,8 +61,8 @@ Toggle Maintenance Mode (system-wide read-only mode)
 
 Optional backup/restore support
 
-🧠 System Design
-🔐 Authentication & Security
+System Design
+Authentication & Security
 
 Two-database architecture:
 
@@ -74,7 +74,7 @@ Passwords are stored only as secure hashes (no plaintext passwords)
 
 Auth DB and ERP DB are linked using a shared user ID
 
-🧱 Architecture
+Architecture
 
 The application follows a layered design:
 
@@ -90,7 +90,7 @@ Auth Layer (auth.*): login, session handling, password verification
 
 UI components never interact directly with the database; all actions go through the service layer.
 
-🗄️ Database Design Highlights
+Database Design Highlights
 
 Normalized relational schema
 
@@ -102,7 +102,7 @@ Validation for capacities, deadlines, and role boundaries
 
 Maintenance flag enforced consistently across all write operations
 
-⚙️ Tech Stack
+Tech Stack
 
 Language: Java
 
@@ -116,7 +116,7 @@ Exports: CSV / PDF
 
 Architecture: Layered (UI → Service → Data)
 
-▶️ How to Run
+How to Run
 
 Ensure Java (JDK 8+) is installed
 
@@ -128,7 +128,7 @@ Run the main application class
 
 Use sample credentials to log in as Student / Instructor / Admin
 
-🧪 Testing & Validation
+Testing & Validation
 
 Acceptance tests for all major user flows
 
@@ -140,7 +140,7 @@ Maintenance Mode validation
 
 Secure authentication verification
 
-📌 Learning Outcomes
+Learning Outcomes
 
 Designed a real-world ERP system with multiple user roles
 
@@ -152,6 +152,6 @@ Built a maintainable desktop GUI application
 
 Practiced clean architecture and systematic testing
 
-📎 Notes
+Notes
 
 This project was developed as part of an Advanced Programming course and simulates real academic administration workflows.
